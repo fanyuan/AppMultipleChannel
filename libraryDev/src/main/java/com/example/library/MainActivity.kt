@@ -1,7 +1,4 @@
-package com.example.librarydev
-
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
+package com.example.library
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

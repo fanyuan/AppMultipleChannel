@@ -1,4 +1,4 @@
-package com.example.librarydev
+package com.example.library
 
 object LibraryHelper {
 

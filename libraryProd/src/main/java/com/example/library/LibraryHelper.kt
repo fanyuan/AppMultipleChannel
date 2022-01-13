@@ -1,4 +1,4 @@
-package com.example.libraryprod
+package com.example.library
 
 object LibraryHelper {
 
@@ -7,5 +7,5 @@ object LibraryHelper {
     fun getmsg():String{
         return "msg is fom $TAG library"
     }
-    
+
 }

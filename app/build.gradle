@@ -19,13 +19,18 @@ android {
     dataBinding{
         enabled = true
     }
+    sourceSets {
+//        SatayKing { res.srcDirs = ['src/SatayKing/res', 'src/SatayKing/res/'] }
+        dev { res.srcDirs = ['src/dev/res', 'src/dev/res/'] }
+        main { res.srcDirs = ['src/main/res', 'src/main/res/'] }
+    }
     productFlavors {
         dev {
             applicationId "com.example.appmultiplechannel.dev"
             resValue "string", "app_name_custom", "dev_myapp"
             resValue "bool", "isrRank", 'false'
             buildConfigField "String", "ENVIRONMENT", '"dev"'
-
+            //@drawable/icon_dev
             manifestPlaceholders = [ENVIRONMENT: "dev",
                                     app_icon   : "@drawable/icon_dev"]
         }

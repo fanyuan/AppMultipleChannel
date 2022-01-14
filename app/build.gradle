@@ -20,7 +20,7 @@ android {
         enabled = true
     }
     sourceSets {
-//        SatayKing { res.srcDirs = ['src/SatayKing/res', 'src/SatayKing/res/'] }
+        stage { res.srcDirs = ['src/stage/res', 'src/stage/res/'] }
         dev { res.srcDirs = ['src/dev/res', 'src/dev/res/'] }
         main { res.srcDirs = ['src/main/res', 'src/main/res/'] }
     }

@@ -23,10 +23,18 @@ android {
         stage {
             res.srcDirs = ['src/stage/res', 'src/stage/res/']
 //            java {
-//                srcDirs "src/dev"
+//                srcDirs "src/stage/java"
 //            }
         }
-        dev { res.srcDirs = ['src/dev/res', 'src/dev/res/'] }
+        dev {
+            res.srcDirs = ['src/dev/res', 'src/dev/res/']
+//            java {
+//                srcDirs "src/dev/java"
+//            }
+        }
+        prod {
+            res.srcDirs = ['src/prod/res', 'src/prod/res/']
+        }
         main { res.srcDirs = ['src/main/res', 'src/main/res/'] }
     }
     productFlavors {

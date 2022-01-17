@@ -26,6 +26,8 @@ class MainActivity : AppCompatActivity() {
             append("ENVIRONMENT = ${BuildConfig.ENVIRONMENT}")
             append("\n\n")
             append("msg = ${LibraryHelper.getmsg()}")
+            append("\n\n")
+            append("UtilStr = ${DemoUtil.getUtilStr()}")
         }
 
         binding.tv.append(buffer)

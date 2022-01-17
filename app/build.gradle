@@ -20,7 +20,12 @@ android {
         enabled = true
     }
     sourceSets {
-        stage { res.srcDirs = ['src/stage/res', 'src/stage/res/'] }
+        stage {
+            res.srcDirs = ['src/stage/res', 'src/stage/res/']
+//            java {
+//                srcDirs "src/dev"
+//            }
+        }
         dev { res.srcDirs = ['src/dev/res', 'src/dev/res/'] }
         main { res.srcDirs = ['src/main/res', 'src/main/res/'] }
     }
